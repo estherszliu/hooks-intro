@@ -13,6 +13,9 @@ function App(){
       <button onClick={() => setMessage("Banana!")}>
         Change message
       </button>
+
+      <input type='text' value={message} onChange={(even) => setMessage(even.target.value)} />
+      
     </div>
   );
 
